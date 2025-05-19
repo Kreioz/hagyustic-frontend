@@ -12,8 +12,8 @@ export default defineConfig({
   resolve: {
     alias: {
       // Path aliases to make imports cleaner
-      Pages: path.resolve(__dirname, "src/pages"),
-      Components: path.resolve(__dirname, "src/components"),
+      Pages: path.resolve(__dirname, "src/Pages"),
+      Components: path.resolve(__dirname, "src/Components"),
       Hooks: path.resolve(__dirname, "src/hooks"),
       Redux: path.resolve(__dirname, "src/redux"),
       Assets: path.resolve(__dirname, "src/assets"),

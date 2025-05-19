@@ -22,7 +22,6 @@ const UsersSection = () => {
           }
         );
         const orders = res.data.data || [];
-        console.log("Fetched Orders:", orders);
         const mapped = {};
 
         orders.forEach((order) => {
