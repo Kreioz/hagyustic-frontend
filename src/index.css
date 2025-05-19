@@ -1,0 +1,59 @@
+/* Global Stylesheet
+   Configures Tailwind CSS, sets root font, and defines custom utilities for animations and logo styling. */
+
+@import "tailwindcss";
+
+/* Set default font for the application */
+#root {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Custom utilities for animations and logo font */
+@layer utilities {
+  /* Generic slide-in animation parameterized by direction */
+  @keyframes slide-in {
+    from {
+      transform: translateX(var(--slide-from));
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  /* Slide-in animation from the right */
+  .animate-slide-in-right {
+    --slide-from: 100%;
+    animation: slide-in 0.3s ease-out;
+  }
+
+  /* Slide-in animation from the left */
+  .animate-slide-in-left {
+    --slide-from: 100%;
+    animation: slide-in 0.3s ease-out;
+  }
+
+  /* Import Playfair Display font for logo */
+  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+  /* Logo font styling with gradient and tight kerning */
+  .logo-font {
+    font-family: "Playfair Display", serif;
+    letter-spacing: -0.3em; /* Tight kerning for Zara-like overlapping effect */
+    background: linear-gradient(
+      90deg,
+      #cc574e,
+      #a77ccc,
+      #4ecda3
+    ); /* Darker gradient: coral to purple to teal */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+}
