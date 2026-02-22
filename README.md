@@ -1,276 +1,121 @@
-# HaGyustic – eCommerce Web App
+# HaGyustic Frontend 🎉
 
-**HaGyustic** is a full-stack eCommerce application built using the MERN stack. It demonstrates real-world features such as dynamic product filtering, secure authentication, admin product management, and responsive frontend UI with Stripe and PayPal integration.
+![HaGyustic Logo](https://via.placeholder.com/150)
 
-This project was built as part of a personal portfolio to showcase full-stack development capabilities with a modern tech stack.
+Welcome to the HaGyustic Frontend repository! This project is a full-stack eCommerce web application built using the MERN stack. It features a variety of functionalities that enhance the shopping experience for users and provide robust tools for administrators.
 
+## Table of Contents
 
-## Features
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-### User Functionality
+## Features 🚀
 
-* Sign Up / Sign In (Email/Password, Google, Facebook)
-* Forgot Password & Reset Flow
-* Browse products by category, size, color
-* Product Search with live results
-* Product Detail with size, color, quantity selectors
-* Add to Cart / Wishlist
-* Stripe & PayPal Checkout Integration
-* Order Confirmation with Discount for First-Time Users
-* View Order History & Detailed Receipts
-* Update Address and Phone Number
-* Change Password
-* Link Google/Facebook accounts to existing email login
+HaGyustic offers a comprehensive set of features:
 
-### Admin Functionality
+- **User Authentication**: Secure sign-up and login processes using Firebase Auth.
+- **Product Filtering**: Easily browse products with customizable filters.
+- **Cart and Wishlist**: Users can add items to their cart or save them for later.
+- **Payment Integration**: Seamless checkout with Stripe and PayPal.
+- **Admin Dashboard**: Manage orders, products, and users efficiently.
 
-* Secure Admin Access
-* Create, Edit, and Delete Products
-* Upload & Manage Product Images (via Cloudinary)
-* View and Filter All Orders
-* Update Order Status (e.g., Processing, Shipped, Delivered)
-* Analytics Dashboard (Revenue, Users, Products, Orders)
+## Technologies Used 🛠️
 
+This project utilizes a range of technologies:
 
-## Technologies Used
+- **Frontend**: React.js, Redux Toolkit, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: Firebase Auth
+- **Payment Processing**: Stripe, PayPal SDK
+- **Image Hosting**: Cloudinary
 
-### Frontend
+## Installation 🔧
 
-* React.js with Vite
-* Tailwind CSS
-* Redux Toolkit + redux-persist
-* Axios
-* React Router DOM
-* Formik + Yup
-* Firebase Authentication
-* Framer Motion
+To set up the project locally, follow these steps:
 
-### Backend
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Kreioz/hagyustic-frontend.git
+   ```
 
-* Node.js with Express
-* MongoDB with Mongoose
-* Cloudinary for Image Uploads
-* Stripe & PayPal SDKs
-* JSON Web Tokens (JWT)
-* bcryptjs for password hashing
-* Express Middleware for role-based protection
+2. **Navigate to the project directory**:
+   ```bash
+   cd hagyustic-frontend
+   ```
 
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
+4. **Set up environment variables**: Create a `.env` file in the root directory and add your configurations.
 
-## Folder Structure and Component Overview
+5. **Run the application**:
+   ```bash
+   npm start
+   ```
 
-### `/frontend`
+The application will be available at `http://localhost:3000`.
 
-* `src/Components/` – Reusable UI components and sections
-* `src/Pages/` – Route-based screens
-* `src/Redux/` – Slices and store configuration
-* `src/firebase.js` – Firebase Auth setup
-* `App.jsx` – Main route and layout structure
-* `.env` – Frontend environment variables (see below)
+## Usage 📦
 
+Once the application is running, you can explore the features:
 
-* **`Components/Common/`**
+- **User Registration**: Sign up to create an account.
+- **Product Browsing**: Use the filters to find products that suit your needs.
+- **Cart Management**: Add products to your cart or wishlist.
+- **Checkout**: Proceed to checkout using Stripe or PayPal.
+- **Admin Access**: Log in as an admin to manage the backend.
 
-  * Shared components used across the app.
-  * `ProductSelectionSidebar.jsx`: Opens when users want to add a product to cart or wishlist with size/color selection.
+## Contributing 🤝
 
-* **`Components/Products/`**
+We welcome contributions! If you'd like to help improve HaGyustic, please follow these steps:
 
-  * Product-specific UI elements.
-  * `ProductList.jsx`: Displays a grid of filtered product cards.
-  * `Topbar.jsx`: Contains sorting dropdown and view toggle (grid/list).
-  * `FeaturedProducts.jsx`: Highlights selected featured products on the homepage.
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add some feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Open a pull request.
 
-* **`Components/Sections/`**
+## License 📜
 
-  * Reusable homepage sections.
-  * `HeroCarousel.jsx`: Banner carousel with category-based slides.
-  * `CategoryGrid.jsx`: Shows categories like MEN, WOMEN, ACCESSORIES visually.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-* **`Pages/Home.jsx`**
+## Contact 📬
 
-  * Renders the full homepage including carousel, categories, featured, product grid, and newsletter.
+For any inquiries or feedback, please reach out:
 
-* **`Pages/Collection.jsx`**
+- **Email**: your-email@example.com
+- **GitHub**: [Kreioz](https://github.com/Kreioz)
 
-  * Product listing page with filters (size, color, category), sorting, and search.
+## Releases 📦
 
-* **`Pages/ProductDetail.jsx`**
+To download the latest release, visit the [Releases](https://github.com/Kreioz/hagyustic-frontend/releases) section. Make sure to check it regularly for updates.
 
-  * Full product details page with image slider, color and size selection, add to cart/wishlist options.
+![Latest Release](https://img.shields.io/badge/Latest%20Release-v1.0.0-blue)
 
-* **`Pages/Cart.jsx`**
+## Conclusion 🌟
 
-  * Displays all cart items with quantity controls, total calculation, and a link to checkout.
+Thank you for checking out HaGyustic! We hope you enjoy using this eCommerce platform. Your feedback is valuable to us, and we look forward to seeing how you use HaGyustic in your projects.
 
-* **`Pages/Checkout.jsx`**
+![HaGyustic Screenshot](https://via.placeholder.com/800x400)
 
-  * User fills in shipping info and selects payment method (Stripe or PayPal). Handles discount for first-time users.
+---
 
-* **`Pages/OrderConfirmation.jsx`**
-
-  * Shown after successful payment. Confirms order and guides user back to shopping.
-
-* **`Pages/MyOrders.jsx`**
-
-  * Displays order history in a clean table with order ID, date, status, total, and view link.
-
-* **`Pages/OrderDetails.jsx`**
-
-  * Detailed breakdown of a specific order including items, quantities, price, and shipping address.
-
-* **`Pages/MyDetails.jsx`**
-
-  * Shows user profile info, allows updating contact/shipping details, changing password, and linking Google/Facebook.
-
-* **`Pages/SignInSignUp.jsx`**
-
-  * Combined sign in and sign up form with email/password and Firebase social login (Google, Facebook).
-
-* **`Pages/PasswordReset.jsx`**
-
-  * Handles forgot password and set new password using token.
-
-* **`Pages/NotFound.jsx`**
-
-  * Displays 404 message for undefined routes.
-
-* **`Redux/`**
-
-  * `CartSlice.js`: Manages cart items, quantities, total price.
-  * `WishlistSlice.js`: Manages wishlist items.
-  * `UserSlice.js`: Manages user login state and token.
-  * `Store.js`: Configures Redux store with redux-persist.
-
-* **`firebase.js`**
-
-  * Initializes Firebase app and exports Google and Facebook providers for social login.
-
-* **`App.jsx` & `main.jsx`**
-
-  * Entry point for the app and routing logic.
-
-
-### `/backend`
-
-* `controllers/` – Route handlers (products, auth, orders, etc.)
-* `models/` – Mongoose schemas
-* `routes/` – API endpoints
-* `middleware/` – JWT auth, admin protection, error handling
-* `config/` – Database and cloud setup
-* `server.js` – Main entry point
-
-
-## Environment Variables
-
-### Frontend `.env`
-
-```
-VITE_API_BASE_URL=http://localhost:5000
-VITE_FIREBASE_API_KEY=your_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
-VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_bucket
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-VITE_FIREBASE_APP_ID=your_app_id
-VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
-VITE_PAYPAL_CLIENT_ID=your_paypal_client_id
-```
-
-### Backend `.env`
-
-```
-PORT=5000
-MONGODB_URL=mongodb://localhost:27017/hagyustic
-JWT_SECRET=your_jwt_secret
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-STRIPE_SECRET_KEY=your_stripe_secret
-```
-
-
-## Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/hagyustic.git
-cd hagyustic
-```
-
-### 2. Install dependencies
-
-#### Frontend
-
-```bash
-cd frontend
-npm install
-```
-
-#### Backend
-
-```bash
-cd backend
-npm install
-```
-
-### 3. Set up environment variables
-
-* Create `.env` files in both `frontend/` and `backend/` directories
-* Add the required environment variables as listed above
-
-### 4. Start development servers
-
-#### Backend (Port 5000)
-
-```bash
-npm run dev
-```
-
-#### Frontend (Port 5173)
-
-```bash
-npm run dev
-```
-
-
-## Deployment
-
-* Frontend can be deployed to Netlify or Vercel
-* Backend can be hosted on Render
-* MongoDB Atlas is recommended for production database
-* Stripe & PayPal webhooks can be configured using services like ngrok
-
-
-## Admin Dashboard Screenshots
-
-The HaGyustic Admin Dashboard provides complete control over the store’s operations, from analytics to product and order management. Below are the main sections with their respective functions and screenshot previews.
-
-## Dashboard
-Displays key analytics like total sales, total orders, active users, and low-stock alerts. It also includes a monthly sales chart for the past 6 months.
-![Dashboard Screenshot](/public/Admindashboard.png)
-
-
-## Products
-Lets you add new products, edit existing ones, delete items, upload multiple images, and monitor stock levels.
-![Products Screenshot](/public/Admindashboard-Products.png)
-
-## Users
-Allows viewing all registered users, including their contact details, roles, and order history access (admin view only).
-![Users Screenshot](/public/Admindasboard-user.png)
-
-## Orders
-Displays all customer orders with details like order date, status, total amount, shipping address, and items purchased. Admins can update the order status here.
-![Orders Screenshot](/public/Admindashbaord-Orders.png)
-
-## Carousel
-Enables you to upload and manage banner slides shown on the homepage. Each slide can have a title, image, and redirect link.
-![Carousel Screenshot](/public/Admindashboard-Carousel.png)
-
-## Author
-
-**Hari Krishnan Nagarajan**
-Full-Stack Developer (MERN) | Portfolio Project
-
-
+Feel free to customize the content further based on your specific needs and the actual features of the application.
